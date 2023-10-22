@@ -1,7 +1,7 @@
 var firstName =prompt("Type First Name Here :");
 var lastName = prompt("Type 2nd Name Here :");
 
-var fullname = firstName.concat(lastName);
+var fullname = firstName.concat(" " +lastName);
 var upFullName = fullname.toUpperCase();
 
 var nameLnt = upFullName.length;
