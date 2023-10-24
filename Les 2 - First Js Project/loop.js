@@ -26,18 +26,36 @@
 //     console.log("Result = " + sum);
 // }
 
-var i = 1;
+// var i = 1;
 
+// var sum = 0;
+
+// while ( i <= 50 ){
+
+//     if (i % 3==0 && i % 5 == 0){
+//         document.write(" " +i)
+//         sum = sum + i;
+//     }   
+//     i = i + 1;
+// }
+
+// document.write(  " = " + sum + "<h1>end</h1>")
+
+
+
+
+// task 6
+var i = 1;
 var sum = 0;
 
-while ( i <= 50 ){
+while (i<= 20){
 
-    if (i % 3==0 && i % 5 == 0){
-        document.write(" " +i)
-        sum = sum + i;
-    }   
-    i = i + 1;
+    if(i%3 == 0 && i%5==0 )
+    {
+        sum = sum +1
+    }
 }
 
-document.write(  " = " + sum + "<h1>end</h1>")
 
+
+document.write(  " = " + sum + "<h1>end</h1>")

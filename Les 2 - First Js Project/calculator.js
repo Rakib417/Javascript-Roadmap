@@ -15,6 +15,8 @@
 
 
 
+// task 3
+
 var firstNum = prompt("Enter First Number =");
 var secNum = prompt("Enter Secend Number =");
 
