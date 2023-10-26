@@ -48,17 +48,17 @@
 // var i = 1;
 // var sum = 0;
 
-<<<<<<< HEAD
-while (i<= 100){
+// <<<<<<< HEAD
+// while (i<= 100){
 
-    if(i%3 == 0 && i%5==0)
-    {
+//     if(i%3 == 0 && i%5==0)
+//     {
 
-        document.write( " " + i )
-        sum = sum + i ;       
-    }
-    i = i+1;
-=======
+//         document.write( " " + i )
+//         sum = sum + i ;       
+//     }
+//     i = i+1;
+// =======
 // while (i<= 20){
 
 //     if(i%3 == 0 && i%5==0 )
@@ -79,22 +79,20 @@ while (i<= 100){
 
 
 
-i = 1;
-sum = 0;
-while(i<= 100){
+// i = 1;
+// sum = 0;
+// while(i<= 100){
 
-    if( i%3 == 0 && i%5==0){
-        document.write( " " + i)
-        sum = sum + i;
-    }
+//     if( i%3 == 0 && i%5==0){
+//         document.write( " " + i)
+//         sum = sum + i;
+//     }
 
-    sum = sum + i;
-    i = i +1;
+//     sum = sum + i;
+//     i = i +1;
+// }
 
->>>>>>> cdff2ea4e6ee0460c4b95d482e4946b88ecad2f3
-}
-
-document.write(" = " + sum);
+// document.write(" = " + sum);
 
 
 
@@ -103,8 +101,62 @@ document.write(" = " + sum);
 
 
 
-<<<<<<< HEAD
-document.write(  " = " + sum + "<h1>end</h1>")
+// <<<<<<< HEAD
+// document.write(  " = " + sum + "<h1>end</h1>")
+
+
+
+
+
+
+// x = 1;
+// su = 0;
+
+// while(x <= 100){
+//     if(x%3==0 && x%5==0){
+        
+//         document.write(" " + x)
+//         su = su + x;
+//     }
+
+    
+//     x = x + 1;
+    
+// }
+
+
+// document.write(  " = " + su + "<h1>end</h1>")
+
+
+// // task 6
+// var i = 1;
+// var sum = 0;
+
+
+// while (i<= 100){
+
+//     if(i%3 == 0 && i%5==0)
+//     {
+
+//         document.write( " " + i )
+//         sum = sum + i ;       
+//     }
+//     i = i+1;
+
+// while (i<= 20){
+
+//     if(i%3 == 0 && i%5==0 )
+//     {
+//         sum = sum +1
+//     }
+// }
+
+
+
+// document.write(  " = " + sum + "<h1>end</h1>")
+
+
+
 
 
 
@@ -112,50 +164,19 @@ document.write(  " = " + sum + "<h1>end</h1>")
 
 
 x = 1;
-su = 0;
+sum = 0;
 
 while(x <= 100){
-    if(x%3==0 && x%5==0){
-        
-        document.write(" " + x)
-        su = su + x;
-    }
 
+    if(x%3==0 && x%5==0){
+        document.write(" "+ x)
+        sum = sum + x;
+    }
     
     x = x + 1;
+    
     
 }
 
 
-document.write(  " = " + su + "<h1>end</h1>")
-=======
->>>>>>> cdff2ea4e6ee0460c4b95d482e4946b88ecad2f3
-
-
-
-// // task 6
-// var i = 1;
-// var sum = 0;
-
-<<<<<<< HEAD
-while (i<= 100){
-
-    if(i%3 == 0 && i%5==0)
-    {
-
-        document.write( " " + i )
-        sum = sum + i ;       
-    }
-    i = i+1;
-=======
-// while (i<= 20){
-
-//     if(i%3 == 0 && i%5==0 )
-//     {
-//         sum = sum +1
-//     }
-// }
-
-
-
-// document.write(  " = " + sum + "<h1>end</h1>")
+document.write(" = " + sum)
