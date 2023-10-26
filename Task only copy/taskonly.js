@@ -65,3 +65,22 @@ switch(letters){
     default:
     document.write("This is Consonant = " + letters.toUpperCase() );
 }
+
+
+
+
+
+
+
+// task 6
+x = 1;
+su = 0;
+
+while(x <= 100){
+    if(x%3==0 && x%5==0){        
+        document.write(" " + x)
+        su = su + x;
+    }   
+    x = x + 1;    
+}
+document.write(  " = " + su + "<h1>end</h1>")
