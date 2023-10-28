@@ -44,10 +44,20 @@
 
 
 // Task Ternary Operator
-var num1 = prompt("ENter 1st Number");
-var num2 = prompt("ENter 2nd Number");
-var num3 = prompt("Enter 3rd Number"); 
-
+var num1 = Number(prompt("ENter 1st Number"));
+var num2 = Number(prompt("ENter 2nd Number"));
+var num3 = Number(prompt("Enter 3rd Number"));
 
 var rsts= num1 > num2 && num1 > num3 ? num1 : num2 > num1 && num2 > num3 ? num2 : num3 ;
-document.write(rsts);
+
+var resel = rsts;
+
+
+
+if(resel)
+{   
+document.write(resel);
+}
+else{
+    document.write("Only used Number")
+}

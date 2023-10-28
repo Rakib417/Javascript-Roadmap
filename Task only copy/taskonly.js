@@ -83,4 +83,22 @@ while(x <= 100){
     }   
     x = x + 1;    
 }
-document.write(  " = " + su + "<h1>end</h1>")
+document.write(  " = " + su + "<h1>end</h1>");
+
+
+
+
+// Task 7
+function calculator(i,o) {
+    var plus = i+o;
+        document.write("Addition = " + plus + " <br>");
+    var negt = i-o;
+    document.write("Subtracdtion = " + negt + " <br>");
+    var devi = i/o;
+    document.write("Division = " + devi + " <br>");
+    var mult = i*o;
+    document.write("Multiplication = " + mult + " <br>");
+    var sesh = i%o;   
+    document.write("Reminder = " + sesh + " <br>"); 
+}
+var x = calculator(20, 23);
