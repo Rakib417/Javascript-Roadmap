@@ -102,3 +102,14 @@ function calculator(i,o) {
     document.write("Reminder = " + sesh + " <br>"); 
 }
 var x = calculator(20, 23);
+
+
+
+// task 8
+var num1 = Number(prompt("Enter  number"));
+var num2 = Number( prompt("Enter  number"));
+
+(function sum(relt) {
+    var relt =num1  + num2;
+    document.write("The sum is " + relt)
+})();
