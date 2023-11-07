@@ -77,11 +77,25 @@
 // console.log("Sum = " + sum);
 
 
-var num = [10,20,30,40,50];
-var sum = 0;
+// var num = new Array ();
+// for(var i = 0;i<6;i++){
+//     num[i] = parseInt(prompt("ENter Number :"));
+// }
+// var sum = 0;
 
-for(var i = 0; i< 5; i++){
-    console.log(num[i]);
+// for(var i = 0; i< 6; i++){
+//     console.log(num[i]);
+//     sum = sum + num[i];
     
-}
+// }
+// console.log("SUm = " + sum);
 
+
+
+
+var num = [10, 20, 30 , 40 , 50];
+
+
+
+
+console.log
