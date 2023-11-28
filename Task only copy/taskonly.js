@@ -113,3 +113,25 @@ var num2 = Number( prompt("Enter  number"));
     var relt =num1  + num2;
     document.write("The sum is " + relt)
 })();
+
+
+
+
+
+// task 9
+var score = [20,22,32,33,42,22];
+
+function highscor(score){
+    var max = score[0];
+    for(var i = 1; i < score.length; i++){
+        if(max<score[i]){
+            max = score[i];
+        }
+    }
+    return max;
+}
+
+var maxscr = highscor(score);
+
+console.log(maxscr);
+

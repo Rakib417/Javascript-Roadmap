@@ -14,20 +14,24 @@
 
 
 
-function highstScore(scores){
-    let max = scores[0];
-    for(var i = 1 ; i < scores.length; i++){
-        if(max<scores[i]){
-            max = scores[i];
+
+
+// task 9
+var score = [20,22,32,33,42,22];
+
+function highscor(score){
+    var max = score[0];
+    for(var i = 1; i < score.length; i++){
+        if(max<score[i]){
+            max = score[i];
         }
     }
     return max;
 }
 
+var maxscr = highscor(score);
 
-var scores = [21,22,34,54,64];
-
-var maxscor = highstScore(scores);
+console.log(maxscr);
 
 
-console.log(maxscor);
+
