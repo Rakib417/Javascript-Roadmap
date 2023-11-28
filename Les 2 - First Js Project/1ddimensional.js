@@ -17,6 +17,8 @@
 
 
 // task 9
+
+console.clear();
 var score = [20,22,32,33,42,22];
 
 function highscor(score){
@@ -32,6 +34,5 @@ function highscor(score){
 var maxscr = highscor(score);
 
 console.log(maxscr);
-
 
 
