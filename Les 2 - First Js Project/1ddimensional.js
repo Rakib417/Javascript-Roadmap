@@ -18,21 +18,50 @@
 
 // task 9
 
-console.clear();
-var score = [20,22,32,33,42,22];
+// console.clear();
+// var score = [20,22,32,33,42,22];
 
-function highscor(score){
+// function highscor(score){
+//     var max = score[0];
+//     for(var i = 1; i < score.length; i++){
+//         if(max<score[i]){
+//             max = score[i];
+//         }
+//     }
+//     return max;
+// }
+
+// var maxscr = highscor(score);
+
+// console.log(maxscr);
+
+
+
+
+var score = [20,22,32,34,43,37,56,55,43];
+
+function highscor(score) {
     var max = score[0];
-    for(var i = 1; i < score.length; i++){
-        if(max<score[i]){
-            max = score[i];
+    for(var x = 0; x < score.length; x++){
+        if(max < score[x]){
+            max = score[x];
         }
     }
     return max;
 }
+var maxsc = highscor(score);
 
-var maxscr = highscor(score);
+console.log(score + " = in betwen top number is " + maxsc);
 
-console.log(maxscr);
+
+
+
+
+
+
+
+
+
+
 
 
