@@ -38,20 +38,45 @@
 
 
 
-var score = [20,22,32,34,43,37,56,55,43];
+// var score = [20,22,32,34,43,37,56,55,43];
 
-function highscor(score) {
-    var max = score[0];
-    for(var x = 0; x < score.length; x++){
-        if(max < score[x]){
-            max = score[x];
+// function highscor(score) {
+//     var max = score[0];
+//     for(var x = 0; x < score.length; x++){
+//         if(max < score[x]){
+//             max = score[x];
+//         }
+//     }
+//     return max;
+// }
+// var maxsc = highscor(score);
+
+// console.log(score + " = in betwen top number is " + maxsc);
+
+
+
+// One Dmensional Array
+// Create a Function call HighstScore That
+// Receive a 1D Array Called scores
+// Return the Highest Score
+
+var scr = [10,20,22,15,56,68,95,54,45,69,98,7,8];
+
+
+
+function highscor(scr){
+    var max = scr[0];
+    for (var x = 0; x <= scr.length; x++){
+        if(max < scr[x]){
+            max = scr[x];
         }
     }
     return max;
 }
-var maxsc = highscor(score);
 
-console.log(score + " = in betwen top number is " + maxsc);
+var maxs = highscor(scr);
+console.log(scr + " = in betwen top number is " + maxs);
+
 
 
 
