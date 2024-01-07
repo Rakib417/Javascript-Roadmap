@@ -37,7 +37,7 @@ console.log(names);
 
 
 
-
+// task 10
 function highRunScore(score) { 
 
     var highScores = score[0][0];
