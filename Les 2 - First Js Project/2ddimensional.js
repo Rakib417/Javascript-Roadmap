@@ -101,3 +101,43 @@ var inf = [
 ]
 var namess = hrscore(inf);
 console.log(namess);
+
+
+
+
+
+
+
+
+
+function totalmainnumb(intro) {
+    var mnam = intro[0][0];
+    var mnumber = intro[0][1];
+
+    for(var x=0; x<intro.length; x++){
+        if (mnumber<intro[x][1]) {
+            mnam = intro[x][0];
+            mnumber = intro[x][1];
+
+        }
+    }
+    return mnam;
+}
+
+
+
+
+
+
+
+var intro = [
+    ["Rakib",20],
+    ["sakib",52],
+    ["Kakib",199],
+    ["Hakib",39],
+    ["Nakib",188],
+    ["Gakib",58],
+    ["Pakib",49],
+]
+var nym =  totalmainnumb(intro);
+console.log(nym);
