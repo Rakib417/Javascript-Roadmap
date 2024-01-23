@@ -1,14 +1,10 @@
-// getelementById
-
 var myheading = document.getElementById("heading1");
-
 myheading.innerHTML = "Hello";
 
 
-document.getElementById("pera").innerHTML = "pera niyan na";
+
+document.getElementsByClassName("hed2")[0].innerHTML = " WE";
 
 
-
-var myheading2 = document.getElementById("heading2");
-
-myheading2.innerHTML = "Hello 2nd ";
+var nitu = document.getElementsByClassName("hed2");
+nitu[0].innerHTML = "LOL";
