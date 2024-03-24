@@ -39,6 +39,7 @@ function back(){
 
 
 var photoall = ["images/001.jpg" , "images/002.jpg" , "images/003.jpg" , "images/004.jpg" , "images/005.jpg"];
+var imgr = document.s
 
 
 
