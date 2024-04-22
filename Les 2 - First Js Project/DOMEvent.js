@@ -40,11 +40,22 @@ console.clear();
 // }
 
 
-const depart = document.querySelector("#department");
-// console.log(depart);
+// const depart = document.querySelector("#department");
+// // console.log(depart);
 
-depart.addEventListener('change', hangledepartment);
+// depart.addEventListener('change', hangledepartment);
 
-function hangledepartment(evnt){
+// function hangledepartment(evnt){
+//     console.log(evnt.target.value);
+// }
+
+
+
+const txtmain = document.querySelector("#txtar");
+console.log(txtmain);
+
+txtmain.addEventListener("change", hndtxt);
+
+function hndtxt(evnt){
     console.log(evnt.target.value);
 }
