@@ -39,8 +39,11 @@ divs.addEventListener('mouseleave', function(){
     console.log("mouseleave");
 });
 
-divs.addEventListener('mousemove', function(){
-    console.log("mousemove");
+divs.addEventListener('mousemove', function(events){
+    // console.log("mousemove");
+
+    // console.log("client X = " + events.clientX +" CLient  Y = "+  events.clientY)
+    console.log("Offset X = " + events.offsetX +" Offset  Y = "+  events.offsetY)
 });
 
 divs.addEventListener('mouseover', function(){
