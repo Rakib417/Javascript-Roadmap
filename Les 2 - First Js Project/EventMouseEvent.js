@@ -15,37 +15,52 @@ console.clear();
 
 var divs = document.querySelector("div");
 
-divs.addEventListener('click', function(){
-    console.log("click");
-});
+// divs.addEventListener('click', function(evnt){
+//     console.log(evnt.target);
+//     console.log(evnt.target.id);
+//     console.log(evnt.target.className);
+//     console.log(evnt.target.innerHTML);
+//     console.log(evnt.target.textContent);
+//     console.log(evnt.target.innerText);
+// });
 
-divs.addEventListener('dblclick', function(){
-    console.log("dblclick");
-});
+// divs.addEventListener('dblclick', function(){
+//     console.log("dblclick");
+// });
 
-divs.addEventListener('mouseup', function(){
-    console.log("mouseup");
-});
+// divs.addEventListener('mouseup', function(){
+//     console.log("mouseup");
+// });
 
-divs.addEventListener('mousedown', function(){
-    console.log("onmousedown");
-});
+// divs.addEventListener('mousedown', function(){
+//     console.log("onmousedown");
+// });
 
-divs.addEventListener('mouseenter', function(){
-    console.log("mouseenter");
-});
+// divs.addEventListener('mouseenter', function(){
+//     console.log("mouseenter");
+// });
 
-divs.addEventListener('mouseleave', function(){
-    console.log("mouseleave");
-});
+// divs.addEventListener('mouseleave', function(){
+//     console.log("mouseleave");
+// });
 
-divs.addEventListener('mousemove', function(events){
-    // console.log("mousemove");
+// divs.addEventListener('mousemove', function(events){
+    
+//     console.log("Offset X = " + events.offsetX +" Offset  Y = "+  events.offsetY)
+// });
 
-    // console.log("client X = " + events.clientX +" CLient  Y = "+  events.clientY)
-    console.log("Offset X = " + events.offsetX +" Offset  Y = "+  events.offsetY)
-});
+// divs.addEventListener('mouseover', function(){
+//     console.log("mouseover");
+// });
 
-divs.addEventListener('mouseover', function(){
-    console.log("mouseover");
+
+
+
+const button = document.querySelectorAll('.btn');
+console.log(button);
+
+Array.from(button).map((button) => {
+    button.addEventListener("click" , function(event){
+        console.log(event.target.innerText)
+    });
 });
