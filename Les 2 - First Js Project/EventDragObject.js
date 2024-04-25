@@ -8,7 +8,7 @@
 // ondrop
 
 const div = document.querySelector("div");
-const p = document.querySelector("div");
+const p = document.querySelector("p");
 
 
 p.addEventListener('dragstart', function(event) {
@@ -20,11 +20,9 @@ div.addEventListener('dragover', function(event) {
     event.preventDefault();
 });
 
-div.addEventListener('drop', function(event) {
-    let id = event.dataTransfer.getData("Txt");
+div.addEventListener("drop", function(event) {
+    let id = event.dataTransfer.getData("Text");
     div.appendChild(document.getElementById(id));
-    console.log(id);
+    
 })
 
-
-NOT WORKING NEED DO AAIN
