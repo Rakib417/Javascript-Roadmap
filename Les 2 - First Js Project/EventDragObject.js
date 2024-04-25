@@ -25,4 +25,3 @@ div.addEventListener("drop", function(event) {
     div.appendChild(document.getElementById(id));
     
 })
-
