@@ -35,18 +35,50 @@
 
 
 
+// const saveBtn = document.querySelector(".savebtn");
+// const msg = document.querySelector(".msg");
+
+// saveBtn.addEventListener("click", displaycount);
+
+// function displaycount() {
+
+//     let count = 1;
+//     msg.textContent = count;
+
+//     setInterval(() => {
+//         count++;
+//         msg.textContent = count;
+//     }, 2000);
+// };
+
+
+
 const saveBtn = document.querySelector(".savebtn");
 const msg = document.querySelector(".msg");
 
-saveBtn.addEventListener("click", displaycount);
+saveBtn.addEventListener('click', startClock);
 
-function displaycount() {
+function startClock() {
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
 
-    let count = 1;
-    msg.textContent = count;
+    minutes = formetime(minutes);
+    seconds = formetime(seconds);
 
-    setInterval(() => {
-        count++;
-        msg.textContent = count;
-    }, 2000);
-};
+
+    let time = hours + ":" + minutes + ":" + seconds;
+
+    msg.textContent = time;
+
+    setInterval(startClock, 1000);
+
+}
+
+function formetime(value) {
+    if (value < 10) {
+        value = "0" + value;
+    }
+    return value;
+}
