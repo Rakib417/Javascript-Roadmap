@@ -14,15 +14,15 @@
 
 
 
-try {
-    // code test 
-    alert("hi");
-    alert(x);
+// try {
+//     // code test 
+//     alert("hi");
+//     alert(x);
 
-} catch (err) {
-    // error handle 
-    console.log(err);
+// } catch (err) {
+//     // error handle 
+//     console.log(err);
 
-} finally {
-    alert("Bye");
-}
+// } finally {
+//     alert("Bye");
+// }
