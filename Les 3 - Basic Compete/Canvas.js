@@ -12,8 +12,12 @@ ctx.fillRect(12, 12, 376, 276);
 
 
 
-var conterX = cee.Width / 2;
-var contery = cee.Height / 2;
+var conterX = cee.width / 2;
+var contery = cee.height / 2;
 
 
-ctx.begin
+ctx.beginPath();
+ctx.arc(conterX, contery, 80, 0, 2 * Math.PI, false);
+ctx.fillStyle = "red";
+ctx.fill();
+ctx.stroke();
