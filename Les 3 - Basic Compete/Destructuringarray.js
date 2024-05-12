@@ -63,4 +63,4 @@ const students = {
     fuleName: "Rakib Ullah"
 }
 
-studentInfo(students);
+studentInfo(students)
