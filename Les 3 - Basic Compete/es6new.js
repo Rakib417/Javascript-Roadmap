@@ -1,0 +1,1 @@
+export let texts = "Welcome module";
