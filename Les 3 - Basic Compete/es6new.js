@@ -1,1 +1,6 @@
-export let texts = "Welcome module";
+// export let text = "We are welcome";
+
+
+// export function setText(txt) {
+//     text = txt;
+// }
