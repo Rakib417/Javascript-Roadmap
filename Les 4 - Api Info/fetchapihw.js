@@ -69,17 +69,29 @@ const makeRequest = async(url, config) => {
 // sendData();
 
 
+// const updateData = () => {
+//     makeRequest('https://jsonplaceholder.typicode.com/posts/1', {
+//             method: 'PATCH',
+//             body: JSON.stringify({
+                
+//                 body: 'bar',
+               
+//             }),
+//             headers: {
+//                 'Content-type': 'application/json; charset=UTF-8',
+//             },
+//         })
+//         .then((res) => console.log(res))
+//         .catch((err) => console.log(err))
+// }
+
+// updateData();
+
+
+
 const updateData = () => {
     makeRequest('https://jsonplaceholder.typicode.com/posts/1', {
-            method: 'POST',
-            body: JSON.stringify({
-                title: 'foosss',
-                body: 'bar',
-                userId: 1,
-            }),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
+            method: 'DELETE',
         })
         .then((res) => console.log(res))
         .catch((err) => console.log(err))
