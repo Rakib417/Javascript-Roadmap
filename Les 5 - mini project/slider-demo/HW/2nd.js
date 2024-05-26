@@ -18,7 +18,7 @@ setInterval(() => {
         currentElements.nextElementSibling.classList.add("current");
     }
 
-}, 2000);
+}, 3000);
 
 
 console.log(slideshowElements);

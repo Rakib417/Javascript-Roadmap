@@ -1,0 +1,22 @@
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    height: 100vh;
+    text-align: center;
+}
+
+.slideshow-elements {}
+
+.slideshow-element {
+    position: absolute;
+    font-size: 2rem;
+    color: navy;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .5s;
+}
+
+.slideshow-element.current {
+    transform: translate(-50%, -50%) scale(1);
+}
