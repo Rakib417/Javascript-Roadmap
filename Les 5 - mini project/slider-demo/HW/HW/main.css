@@ -1,5 +1,23 @@
-.main-Container {}
+.main-Container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    text-align: center;
+    height: 100vh;
+}
 
 .sliderElements {}
 
-.sliderinner {}
+.sliderinner {
+    color:#f9f9f9;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    transition: .5s all;
+    font-size: 3rem;
+}
+
+.sliderinner.current{
+    transform: translate(-50%,-50%) scale(1);
+}
