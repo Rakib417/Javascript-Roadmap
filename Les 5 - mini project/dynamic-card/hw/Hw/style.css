@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.posts {
+    width: 100%;
+    /* background-color: #eaeaea; */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.postcard {
+    width: 23%;
+    margin: 0.3rem;
+    box-shadow: 0 4px 8px #999;
+    padding: 1rem;
+    transition: .4s all;
+}
+
+.postcard:hover {
+    box-shadow: 0 8px 16px #999;
+}
+
+
+/* responsive here */
+
+@media screen and (max-width:992px) {
+    .postcard {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .postcard {
+        width: 46%;
+    }
+}
