@@ -8,7 +8,7 @@ const msgElement = document.querySelector("#msg");
 
 // show MSG 
 const showMsg = (text, status) => {
-    msgElement.textContent = "text";
+    msgElement.textContent = text;
     msgElement.classList.add(`bg-${status}`);
     setTimeout(() => {
         msgElement.textContent = "";
@@ -29,8 +29,29 @@ const createToDo = (toDoid, toDoValue) => {
             <i class="fa fa-trash"></i>
         </button></span>
     `;
+
+
     toDoList.appendChild(todoElement);
+
+    const deletebutton = todoElement.querySelector("#deletebtn");
+    deletebutton.addEventListener("click", deleteTodo);
 };
+
+
+// deleteTodo 
+
+const deleteTodo = (event) => {
+    const selectedTodo = event.target.parentElement.parentElement;
+    toDoList.removeChild(selectedTodo);
+    showMsg("Todo Is Deleted", "denger")
+}
+
+// get local Storage 
+const getToDosFromLocalStorage = () => {
+    localStorage.getItem("mytodos") ? JSON.parse(localStorage.getItem("mytodos")) : [];
+}
+
+
 
 // add Todo Fnction 
 const addToDo = (event) => {
@@ -44,7 +65,7 @@ const addToDo = (event) => {
     showMsg("Todo is Added", "success");
 
     // localStorage 
-    const todos = localStorage.getItem("mytodos") ? JSON.parse(localStorage.getItem("mytodos")) : [];
+    const todos = getToDosFromLocalStorage();
     todos.push({ toDoid, toDoValue });
     localStorage.setItem("mytodos", JSON.stringify(todos));
     toDoInput.value = "";
