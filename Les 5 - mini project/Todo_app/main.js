@@ -43,12 +43,13 @@ const createToDo = (toDoid, toDoValue) => {
 const deleteTodo = (event) => {
     const selectedTodo = event.target.parentElement.parentElement;
     toDoList.removeChild(selectedTodo);
-    showMsg("Todo Is Deleted", "denger")
-}
+    showMsg("Todo Is Deleted", "denger");
+
+};
 
 // get local Storage 
 const getToDosFromLocalStorage = () => {
-    localStorage.getItem("mytodos") ? JSON.parse(localStorage.getItem("mytodos")) : [];
+    return localStorage.getItem("mytodos") ? JSON.parse(localStorage.getItem("mytodos")) : [];
 }
 
 
