@@ -1,0 +1,67 @@
+/* resrt code  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* resrt code  */
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+/* post starts  */
+
+.posts {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 25%;
+    margin: 0.3rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    transition: .4s all;
+    border-radius: .2rem;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 100%;
+    height: 50%;
+}
+
+.post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* post starts  */
+
+
+/* responsive here */
+
+@media screen and (max-width:992px) {
+    .post {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .post {
+        width: 100%;
+    }
+}
+
+
+/* responsive here */
